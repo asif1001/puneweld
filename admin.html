@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <title>Admin - Puneweld Enterprises</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function validatePassword() {
-            const password = prompt("Enter the password:");
-            if (password === "Asif@28111984") {
-                document.getElementById("content").style.display = "block";
-            } else {
-                alert("Incorrect password!");
-            }
-        }
-    </script>
+    <script src="admin.js"></script>
 </head>
-<body onload="validatePassword()">
-    <header>
-        <h1>Admin Page</h1>
-        <nav>
-            <a href="./">Home</a>
-            <a href="service.html">Service</a>
-            <a href="contact.html">Contact</a>
-            <a href="admin.html">Admin</a>
-        </nav>
-    </header>
-    <main>
-        <div id="content" style="display:none;">
-            <p>Welcome to the Admin section!</p>
+<body>
+    <aside>
+        <div class="company-info">
+            <img src="logo.png" alt="Puneweld Logo" class="logo">
+            <h1>Puneweld Enterprises</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="current-projects.html">Current Projects</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
         </div>
+    </aside>
+    <main>
+        <h2>Admin Panel</h2>
+        <div id="admin-login">
+            <script>
+                const password = prompt("Enter password:");
+                if (password !== "Asif@2811184") {
+                    alert("Access Denied");
+                    window.location.href = "index.html";
+                }
+            </script>
+        </div>
+        <!-- Admin interface to update current projects -->
     </main>
-    <footer>
-        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
-    </footer>
 </body>
 </html>

@@ -75,47 +75,30 @@ nav ul li a:hover {
 }
 
 /* Image Carousel */
-.project-carousel {
+.image-carousel {
     margin: 30px 0;
     overflow: hidden;
     position: relative;
     width: 100%;
-    background-color: #f9f9f9;
-    padding: 20px 0;
 }
 
 .carousel {
     display: flex;
     animation: scroll 60s linear infinite;
-    gap: 20px;
 }
 
-.project-item {
-    background-color: white;
-    padding: 15px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    text-align: center;
-    min-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.project-item:hover {
-    transform: scale(1.05);
-}
-
-.project-item img {
-    max-width: 100%;
-    height: 150px;
+.carousel img {
+    width: 300px;
+    height: 200px;
     object-fit: cover;
-    margin-top: 10px;
+    margin-right: 10px;
+    border: 2px solid #f7c331;
     border-radius: 5px;
 }
 
 @keyframes scroll {
     from {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     to {
         transform: translateX(-100%);
@@ -259,6 +242,46 @@ footer a:hover {
     color: #114AB1;
 }
 
+/* Project List */
+#project-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.project-item img,
+.project-item video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.project-item button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.project-item button:hover {
+    background-color: #e63939;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header .container {
@@ -296,7 +319,6 @@ footer a:hover {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
-
 .external-links {
     margin-top: 20px;
     display: flex;

@@ -1,57 +1,41 @@
-/* Global Styles */
-:root {
-    --background-color: #F9F9F9;
-    --primary-text-color: #3A3A3A;
-    --accent-color: #6C63FF;
-    --footer-bg-color: #EDEDED;
-}
-
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: var(--background-color);
-    color: var(--primary-text-color);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background: #f5f5f5;
+    color: #333;
 }
 
 header {
-    background-color: var(--accent-color);
-    color: white;
     text-align: center;
+    background: #6C63FF;
+    color: white;
     padding: 20px;
 }
 
 header h1 {
-    font-family: 'Playfair Display', serif;
     margin: 0;
 }
 
-nav a {
-    color: white;
-    margin: 0 15px;
+header .cta-buttons .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: #6C63FF;
     text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
+    border-radius: 5px;
 }
 
 main {
     padding: 20px;
-    text-align: center;
 }
 
 footer {
-    background-color: var(--footer-bg-color);
+    background: #333;
+    color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-family: 'Merriweather', serif;
-}
-
-footer p {
-    margin: 0;
+    padding: 10px 0;
+    margin-top: 20px;
 }

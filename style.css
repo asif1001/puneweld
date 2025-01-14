@@ -84,8 +84,7 @@ nav ul li a:hover {
 
 .carousel {
     display: flex;
-    width: calc(100% * 10); /* Adjust for the number of images */
-    animation: scroll 60s linear infinite; /* Slower animation (60s) for continuous movement */
+    animation: scroll 60s linear infinite;
 }
 
 .carousel img {

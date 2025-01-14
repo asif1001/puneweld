@@ -6,9 +6,6 @@
     <title>Current Projects - Puneweld Enterprises</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script defer src="current-projects.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"></script>
 </head>
 <body>
     <header>
@@ -20,7 +17,6 @@
                     <li><a href="service.html">Services</a></li>
                     <li><a href="current-projects.html">Current Projects</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="admin.html">Admin</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,9 +24,33 @@
     <main>
         <section class="hero">
             <h1>Current Projects</h1>
-            <p>Explore our latest ongoing projects.</p>
+            <p>Explore our latest ongoing projects below.</p>
         </section>
-        <section id="project-gallery" class="project-gallery"></section>
+        <section class="project-carousel">
+            <div class="carousel">
+                <!-- Add your projects manually here -->
+                <div class="project-item">
+                    <h3>Project Name: Industrial Gate Fabrication</h3>
+                    <p>Description: Custom-built industrial gates for enhanced security and durability.</p>
+                    <img src="https://res.cloudinary.com/dsnen7cvr/image/upload/v1736843535/Puneweld-product/Industrial-krane_pohr7z.jpg" alt="Industrial Gate">
+                </div>
+                <div class="project-item">
+                    <h3>Project Name: Residential Staircase</h3>
+                    <p>Description: Stylish and robust metal staircase designed for modern homes.</p>
+                    <img src="https://res.cloudinary.com/dsnen7cvr/image/upload/v1736843535/Puneweld-product/Industrial-krane_pohr7z.jpg" alt="Residential Staircase">
+                </div>
+                <div class="project-item">
+                    <h3>Project Name: Parking Shade Installation</h3>
+                    <p>Description: Weather-resistant parking shades for commercial spaces.</p>
+                    <img src="https://res.cloudinary.com/dsnen7cvr/image/upload/v1736843535/Puneweld-product/Industrial-krane_pohr7z.jpg" alt="Parking Shade">
+                </div>
+                <div class="project-item">
+                    <h3>Project Name: Decorative Metal Work</h3>
+                    <p>Description: Beautiful, intricate metalwork for residential and commercial spaces.</p>
+                    <img src="https://res.cloudinary.com/dsnen7cvr/image/upload/v1736843535/Puneweld-product/Industrial-krane_pohr7z.jpg" alt="Decorative Metal">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Puneweld Enterprises. All rights reserved.</p>

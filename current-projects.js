@@ -1,11 +1,12 @@
 // Firebase configuration (same as admin.js)
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyDX5b76aFeJGslHt3FknWoV0zOHARY6Kyw",
+  authDomain: "puneweld-9ff85.firebaseapp.com",
+  projectId: "puneweld-9ff85",
+  storageBucket: "puneweld-9ff85.firebasestorage.app",
+  messagingSenderId: "3058063972",
+  appId: "1:3058063972:web:6cc492e15b4c1eb8f61d71",
+  measurementId: "G-F06ZQ1HDYM"
 };
 
 // Initialize Firebase

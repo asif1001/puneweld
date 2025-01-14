@@ -16,7 +16,7 @@ const db = firebase.firestore(app);
 // Password protection
 const checkPassword = () => {
     const password = document.getElementById("admin-password").value;
-    if (password === "Asif@2811184") {
+    if (password === "Asif@28111984") {
         document.getElementById("admin-content").style.display = "block";
         document.querySelector(".admin-login").style.display = "none";
     } else {

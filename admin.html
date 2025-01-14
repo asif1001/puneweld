@@ -6,6 +6,7 @@
     <title>Admin - Puneweld Enterprises</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script defer src="admin.js"></script>
 </head>
 <body>
     <header>
@@ -24,14 +25,27 @@
     </header>
     <main>
         <h1>Admin Panel</h1>
-        <script>
-            const password = prompt("Enter the Admin Password:");
-            if (password !== "Asif@28111984") {
-                alert("Access Denied");
-                window.location.href = "index.html";
-            }
-        </script>
-        <p>Welcome to the Admin Panel. Manage your current projects here.</p>
+        <section class="admin-login">
+            <label for="admin-password">Enter Password:</label>
+            <input type="password" id="admin-password" placeholder="Admin Password">
+            <button onclick="checkPassword()">Login</button>
+        </section>
+        <section id="admin-content" style="display: none;">
+            <h2>Manage Current Projects</h2>
+            <form id="project-form">
+                <label for="project-name">Project Name:</label>
+                <input type="text" id="project-name" required>
+                <label for="project-description">Project Description:</label>
+                <textarea id="project-description" rows="4" required></textarea>
+                <label for="project-media">Image/Video Link (Cloudinary):</label>
+                <input type="url" id="project-media" required>
+                <button type="submit">Add Project</button>
+            </form>
+            <h3>Current Projects</h3>
+            <div id="project-list"></div>
+            <h3>External Links</h3>
+            <a href="https://bill.gogstbill.com/gst/home.php" target="_blank" class="external-button">Login to Billing</a>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Puneweld Enterprises. All rights reserved.</p>
